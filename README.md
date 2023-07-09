@@ -11,8 +11,8 @@ crackles and Presence/absence of wheezes.
 In this we can detect any unhealthy symptom of patients
 
 # SOLUTION: 
--We converted the audio file to theimage using the librosa library to get an idea of the audio .
--we started the preprocessing of thedata, for this we paired the audio file (.wav) and corresponding text file.Then we read the text file and split the audio file on the basis of timestamps along with this we pass the separated images in the function "features_extractor"
--Inside that function we converted the audio to image and extracted the feature using MFCC(Mel-frequency cepstral coefficients)
--The four possible outputs will be predicted as follows: The presence of crackles and wheezes both are determined
+* We converted the audio file to theimage using the librosa library to get an idea of the audio .
+* we started the preprocessing of thedata, for this we paired the audio file (.wav) and corresponding text file.Then we read the text file and split the audio file on the basis of timestamps along with this we pass the separated images in the function "features_extractor"
+* Inside that function we converted the audio to image and extracted the feature using MFCC(Mel-frequency cepstral coefficients)
+* The four possible outputs will be predicted as follows: The presence of crackles and wheezes both are determined
 
