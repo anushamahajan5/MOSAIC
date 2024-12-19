@@ -36,3 +36,4 @@ The model helps in detecting unhealthy symptoms in patients by analyzing these f
 ### Why Librosa?
 Librosa was chosen for this project due to its powerful and efficient capabilities for audio processing and feature extraction. It offers several tools specifically designed for working with audio signals, making it ideal for tasks like converting audio to spectrograms and extracting features such as **MFCCs** (Mel-frequency cepstral coefficients), which are essential for analyzing sound patterns in the lungs. Its simple and intuitive API allowed for quick development and integration into the machine learning pipeline, ensuring high-quality audio data preprocessing for accurate model predictions.
 
+More About **MFCCs** [https://en.wikipedia.org/wiki/Mel-frequency_cepstrum#:~:text=In%20sound%20processing%2C%20the%20mel,collectively%20make%20up%20an%20MFC.]
