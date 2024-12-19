@@ -6,6 +6,12 @@ Stethoscope-based respiratory auscultation has long been an important first-line
 
 For a given digital dataset, in the form of text and audio files, we can form spectrogram images, which are then used for model training. Once the model is trained, it can make predictions on the **presence/absence of crackles** and the **presence/absence of wheezes**. This helps in detecting unhealthy symptoms in patients.
 
+**Wheezing**:
+A high-pitched hissing sound that's similar to a deflating balloon. It's often caused by air passing through a narrowed airway at high speed, and is commonly associated with asthma and emphysema. 
+
+**Crackles**:
+An interrupted or explosive sound that can sound like rattling, bubbling, or clicking. It's usually caused by the opening of airways in areas of the lung that are deflated, and is a sign of too much fluid in the lung. Crackles are often only heard with a stethoscope. 
+
 ## Solution
 1. **Audio to Image Conversion**: We converted the audio files (.wav) to images using the `librosa` library to better visualize and analyze the audio.
   
