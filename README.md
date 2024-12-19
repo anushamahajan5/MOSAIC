@@ -1,18 +1,32 @@
 # MOSAIC
 ML-based project on detection of crackles and wheezes
-# PROBLEM-STATEMENT : 
-Stethoscope-based respiratory auscultation has long been an important
-first-line physical exam.The development of stethoscope technology has made it possible to
-record patient sounds with high quality.The project here aims to solve one such lung condition—wheezes and
-crackles—through the use of machine learning algorithm.For a given digital data, in the form of text and audio files we can form
-spectrophotogram figures and further model training can beaccomplished.
-Once, we train the model ,it makes predictions on Presence/absence of
-crackles and Presence/absence of wheezes.
-In this we can detect any unhealthy symptom of patients
 
-# SOLUTION: 
-* We converted the audio file to theimage using the librosa library to get an idea of the audio .
-* we started the preprocessing of thedata, for this we paired the audio file (.wav) and corresponding text file.Then we read the text file and split the audio file on the basis of timestamps along with this we pass the separated images in the function "features_extractor"
-* Inside that function we converted the audio to image and extracted the feature using MFCC(Mel-frequency cepstral coefficients)
-* The four possible outputs will be predicted as follows: The presence of crackles and wheezes both are determined
+## Problem Statement
+Stethoscope-based respiratory auscultation has long been an important first-line physical exam. The development of stethoscope technology has made it possible to record patient sounds with high quality. This project aims to solve the detection of lung conditions—specifically, crackles and wheezes—through the use of machine learning algorithms.
+
+For a given digital dataset, in the form of text and audio files, we can form spectrogram images, which are then used for model training. Once the model is trained, it can make predictions on the **presence/absence of crackles** and the **presence/absence of wheezes**. This helps in detecting unhealthy symptoms in patients.
+
+## Solution
+1. **Audio to Image Conversion**: We converted the audio files (.wav) to images using the `librosa` library to better visualize and analyze the audio.
+  
+2. **Data Preprocessing**: We paired the audio files with their corresponding text files. After reading the text file, we split the audio file based on timestamps. The separated audio segments are then passed through the `features_extractor` function.
+
+3. **Feature Extraction**: Inside the `features_extractor` function, we converted the audio to images and extracted features using **MFCC (Mel-frequency cepstral coefficients)**.
+
+4. **Model Prediction**: The model predicts four possible outcomes based on the input:
+   - **Presence of crackles**
+   - **Absence of crackles**
+   - **Presence of wheezes**
+   - **Absence of wheezes**
+
+The model helps in detecting unhealthy symptoms in patients by analyzing these features.
+
+## Diagnosis of Lung Abnormalities (Feb 2023 - June 2023)
+
+- **Audio Analysis**: Processed 2,000 lung sound files into spectrograms using **Librosa**.
+- **Model Accuracy**: Achieved 96% accuracy with a CNN model.
+- **Tech Stack**: Python, Librosa, CNN
+
+### Why Librosa?
+Librosa was chosen for this project due to its powerful and efficient capabilities for audio processing and feature extraction. It offers several tools specifically designed for working with audio signals, making it ideal for tasks like converting audio to spectrograms and extracting features such as **MFCCs** (Mel-frequency cepstral coefficients), which are essential for analyzing sound patterns in the lungs. Its simple and intuitive API allowed for quick development and integration into the machine learning pipeline, ensuring high-quality audio data preprocessing for accurate model predictions.
 
